@@ -33,7 +33,7 @@ Partial Class adminverification
         Me.Button1.Location = New System.Drawing.Point(104, 187)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(103, 49)
-        Me.Button1.TabIndex = 0
+        Me.Button1.TabIndex = 1
         Me.Button1.Text = "VERIFY"
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -44,7 +44,7 @@ Partial Class adminverification
         Me.Label1.Location = New System.Drawing.Point(37, 121)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(240, 20)
-        Me.Label1.TabIndex = 1
+        Me.Label1.TabIndex = 2
         Me.Label1.Text = "ADMINISTRATOR PASSWORD"
         '
         'password
@@ -53,7 +53,8 @@ Partial Class adminverification
         Me.password.Location = New System.Drawing.Point(79, 144)
         Me.password.Name = "password"
         Me.password.Size = New System.Drawing.Size(160, 26)
-        Me.password.TabIndex = 2
+        Me.password.TabIndex = 0
+        Me.password.UseSystemPasswordChar = True
         '
         'adminverification
         '
@@ -65,7 +66,7 @@ Partial Class adminverification
         Me.Controls.Add(Me.Button1)
         Me.Name = "adminverification"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "adminverification"
+        Me.Text = "Capstone Project E-Library"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

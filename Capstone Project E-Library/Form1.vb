@@ -31,7 +31,7 @@ Public Class Form1
             If count = 1 Then
                 MessageBox.Show("LOGIN SUCCESSFUL")
 
-                Me.Hide()
+
             ElseIf count > 1 Then
                 MessageBox.Show("LOGIN DETAILS DUPLICATED")
             Else
@@ -73,5 +73,15 @@ Public Class Form1
             MsgBox(ex.Message)
         End Try
         conn.Close()
+    End Sub
+    Dim retype As Integer = 0
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        If retype = 0 Then
+            password.UseSystemPasswordChar = False
+            retype = 1
+        ElseIf retype = 1 Then
+            password.UseSystemPasswordChar = True
+            retype = 0
+        End If
     End Sub
 End Class

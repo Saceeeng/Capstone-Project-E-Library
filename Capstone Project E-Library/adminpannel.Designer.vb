@@ -28,6 +28,7 @@ Partial Class adminpannel
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.id = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.middlename = New System.Windows.Forms.TextBox()
@@ -42,9 +43,19 @@ Partial Class adminpannel
         Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.TabControl2 = New System.Windows.Forms.TabControl()
+        Me.TabPage6 = New System.Windows.Forms.TabPage()
+        Me.TabPage7 = New System.Windows.Forms.TabPage()
+        Me.ListView2 = New System.Windows.Forms.ListView()
+        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader7 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader8 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.TabControl1.SuspendLayout()
+        Me.TabPage4.SuspendLayout()
         Me.TabPage5.SuspendLayout()
+        Me.TabControl2.SuspendLayout()
+        Me.TabPage6.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -95,12 +106,13 @@ Partial Class adminpannel
         '
         'TabPage4
         '
+        Me.TabPage4.Controls.Add(Me.TabControl2)
         Me.TabPage4.Location = New System.Drawing.Point(4, 22)
         Me.TabPage4.Name = "TabPage4"
         Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
         Me.TabPage4.Size = New System.Drawing.Size(792, 424)
         Me.TabPage4.TabIndex = 3
-        Me.TabPage4.Text = "TabPage4"
+        Me.TabPage4.Text = "MANAGE USERS"
         Me.TabPage4.UseVisualStyleBackColor = True
         '
         'TabPage5
@@ -125,6 +137,16 @@ Partial Class adminpannel
         Me.TabPage5.Text = "EDIT CREDENTIALS"
         Me.TabPage5.UseVisualStyleBackColor = True
         '
+        'Button2
+        '
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(3, 6)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 37)
+        Me.Button2.TabIndex = 4
+        Me.Button2.Text = "logout admin"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'id
         '
         Me.id.AutoSize = True
@@ -132,7 +154,7 @@ Partial Class adminpannel
         Me.id.Location = New System.Drawing.Point(607, 41)
         Me.id.Name = "id"
         Me.id.Size = New System.Drawing.Size(26, 20)
-        Me.id.TabIndex = 51
+        Me.id.TabIndex = 6
         Me.id.Text = "ID"
         '
         'Label1
@@ -142,7 +164,7 @@ Partial Class adminpannel
         Me.Label1.Location = New System.Drawing.Point(583, 41)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(26, 20)
-        Me.Label1.TabIndex = 52
+        Me.Label1.TabIndex = 5
         Me.Label1.Text = "ID"
         '
         'middlename
@@ -151,7 +173,7 @@ Partial Class adminpannel
         Me.middlename.Location = New System.Drawing.Point(611, 237)
         Me.middlename.Name = "middlename"
         Me.middlename.Size = New System.Drawing.Size(117, 26)
-        Me.middlename.TabIndex = 47
+        Me.middlename.TabIndex = 2
         '
         'Label8
         '
@@ -160,7 +182,7 @@ Partial Class adminpannel
         Me.Label8.Location = New System.Drawing.Point(587, 214)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(121, 20)
-        Me.Label8.TabIndex = 43
+        Me.Label8.TabIndex = 9
         Me.Label8.Text = "MIDDLE NAME"
         '
         'lastname
@@ -169,7 +191,7 @@ Partial Class adminpannel
         Me.lastname.Location = New System.Drawing.Point(611, 173)
         Me.lastname.Name = "lastname"
         Me.lastname.Size = New System.Drawing.Size(117, 26)
-        Me.lastname.TabIndex = 49
+        Me.lastname.TabIndex = 1
         '
         'Label9
         '
@@ -178,7 +200,7 @@ Partial Class adminpannel
         Me.Label9.Location = New System.Drawing.Point(580, 77)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(106, 20)
-        Me.Label9.TabIndex = 44
+        Me.Label9.TabIndex = 7
         Me.Label9.Text = "FIRST NAME"
         '
         'Label10
@@ -188,7 +210,7 @@ Partial Class adminpannel
         Me.Label10.Location = New System.Drawing.Point(583, 141)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(99, 20)
-        Me.Label10.TabIndex = 45
+        Me.Label10.TabIndex = 8
         Me.Label10.Text = "LAST NAME"
         '
         'firstname
@@ -197,16 +219,18 @@ Partial Class adminpannel
         Me.firstname.Location = New System.Drawing.Point(608, 100)
         Me.firstname.Name = "firstname"
         Me.firstname.Size = New System.Drawing.Size(120, 26)
-        Me.firstname.TabIndex = 50
+        Me.firstname.TabIndex = 0
         '
         'ListView1
         '
         Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4})
         Me.ListView1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ListView1.Location = New System.Drawing.Point(76, 77)
+        Me.ListView1.FullRowSelect = True
+        Me.ListView1.HideSelection = False
+        Me.ListView1.Location = New System.Drawing.Point(8, 49)
         Me.ListView1.Name = "ListView1"
         Me.ListView1.Size = New System.Drawing.Size(467, 220)
-        Me.ListView1.TabIndex = 40
+        Me.ListView1.TabIndex = 10
         Me.ListView1.UseCompatibleStateImageBehavior = False
         Me.ListView1.View = System.Windows.Forms.View.Details
         '
@@ -238,19 +262,75 @@ Partial Class adminpannel
         Me.Button1.Location = New System.Drawing.Point(591, 283)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(137, 37)
-        Me.Button1.TabIndex = 39
+        Me.Button1.TabIndex = 3
         Me.Button1.Text = "UPDATE"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Button2
+        'TabControl2
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(3, 6)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 37)
-        Me.Button2.TabIndex = 53
-        Me.Button2.Text = "logout admin"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.TabControl2.Controls.Add(Me.TabPage6)
+        Me.TabControl2.Controls.Add(Me.TabPage7)
+        Me.TabControl2.Location = New System.Drawing.Point(6, 29)
+        Me.TabControl2.Name = "TabControl2"
+        Me.TabControl2.SelectedIndex = 0
+        Me.TabControl2.Size = New System.Drawing.Size(783, 387)
+        Me.TabControl2.TabIndex = 0
+        '
+        'TabPage6
+        '
+        Me.TabPage6.Controls.Add(Me.ListView2)
+        Me.TabPage6.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage6.Name = "TabPage6"
+        Me.TabPage6.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage6.Size = New System.Drawing.Size(775, 361)
+        Me.TabPage6.TabIndex = 0
+        Me.TabPage6.Text = "DELETE USER"
+        Me.TabPage6.UseVisualStyleBackColor = True
+        '
+        'TabPage7
+        '
+        Me.TabPage7.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage7.Name = "TabPage7"
+        Me.TabPage7.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage7.Size = New System.Drawing.Size(775, 361)
+        Me.TabPage7.TabIndex = 1
+        Me.TabPage7.Text = "TabPage7"
+        Me.TabPage7.UseVisualStyleBackColor = True
+        '
+        'ListView2
+        '
+        Me.ListView2.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8})
+        Me.ListView2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ListView2.FullRowSelect = True
+        Me.ListView2.HideSelection = False
+        Me.ListView2.Location = New System.Drawing.Point(19, 6)
+        Me.ListView2.Name = "ListView2"
+        Me.ListView2.Size = New System.Drawing.Size(467, 349)
+        Me.ListView2.TabIndex = 11
+        Me.ListView2.UseCompatibleStateImageBehavior = False
+        Me.ListView2.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader5
+        '
+        Me.ColumnHeader5.Text = "ID"
+        '
+        'ColumnHeader6
+        '
+        Me.ColumnHeader6.Text = "LAST NAME"
+        Me.ColumnHeader6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.ColumnHeader6.Width = 115
+        '
+        'ColumnHeader7
+        '
+        Me.ColumnHeader7.Text = "FIRST NAME"
+        Me.ColumnHeader7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.ColumnHeader7.Width = 118
+        '
+        'ColumnHeader8
+        '
+        Me.ColumnHeader8.Text = "MIDDLE NAME"
+        Me.ColumnHeader8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.ColumnHeader8.Width = 127
         '
         'adminpannel
         '
@@ -260,10 +340,13 @@ Partial Class adminpannel
         Me.Controls.Add(Me.TabControl1)
         Me.Name = "adminpannel"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "adminpannel"
+        Me.Text = "Capstone Project E-Library"
         Me.TabControl1.ResumeLayout(False)
+        Me.TabPage4.ResumeLayout(False)
         Me.TabPage5.ResumeLayout(False)
         Me.TabPage5.PerformLayout()
+        Me.TabControl2.ResumeLayout(False)
+        Me.TabPage6.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -289,4 +372,12 @@ Partial Class adminpannel
     Friend WithEvents ColumnHeader4 As ColumnHeader
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents TabControl2 As TabControl
+    Friend WithEvents TabPage6 As TabPage
+    Friend WithEvents ListView2 As ListView
+    Friend WithEvents ColumnHeader5 As ColumnHeader
+    Friend WithEvents ColumnHeader6 As ColumnHeader
+    Friend WithEvents ColumnHeader7 As ColumnHeader
+    Friend WithEvents ColumnHeader8 As ColumnHeader
+    Friend WithEvents TabPage7 As TabPage
 End Class

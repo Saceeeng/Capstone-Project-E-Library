@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.Capstone_Project_E_Library.Form1
+            Me.MainForm = Global.Capstone_Project_E_Library.adminpannel
         End Sub
     End Class
 End Namespace
