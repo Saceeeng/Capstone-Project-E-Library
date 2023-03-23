@@ -27,6 +27,23 @@ Partial Class adminpannel
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.TabControl2 = New System.Windows.Forms.TabControl()
+        Me.TabPage6 = New System.Windows.Forms.TabPage()
+        Me.id1 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.middlename1 = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.lastname1 = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.firstname1 = New System.Windows.Forms.TextBox()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.ListView2 = New System.Windows.Forms.ListView()
+        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader7 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader8 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.TabPage7 = New System.Windows.Forms.TabPage()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.id = New System.Windows.Forms.Label()
@@ -43,19 +60,11 @@ Partial Class adminpannel
         Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.TabControl2 = New System.Windows.Forms.TabControl()
-        Me.TabPage6 = New System.Windows.Forms.TabPage()
-        Me.TabPage7 = New System.Windows.Forms.TabPage()
-        Me.ListView2 = New System.Windows.Forms.ListView()
-        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader7 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader8 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.TabControl1.SuspendLayout()
         Me.TabPage4.SuspendLayout()
-        Me.TabPage5.SuspendLayout()
         Me.TabControl2.SuspendLayout()
         Me.TabPage6.SuspendLayout()
+        Me.TabPage5.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -114,6 +123,166 @@ Partial Class adminpannel
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "MANAGE USERS"
         Me.TabPage4.UseVisualStyleBackColor = True
+        '
+        'TabControl2
+        '
+        Me.TabControl2.Controls.Add(Me.TabPage6)
+        Me.TabControl2.Controls.Add(Me.TabPage7)
+        Me.TabControl2.Location = New System.Drawing.Point(6, 29)
+        Me.TabControl2.Name = "TabControl2"
+        Me.TabControl2.SelectedIndex = 0
+        Me.TabControl2.Size = New System.Drawing.Size(783, 387)
+        Me.TabControl2.TabIndex = 0
+        '
+        'TabPage6
+        '
+        Me.TabPage6.Controls.Add(Me.id1)
+        Me.TabPage6.Controls.Add(Me.Label3)
+        Me.TabPage6.Controls.Add(Me.middlename1)
+        Me.TabPage6.Controls.Add(Me.Label4)
+        Me.TabPage6.Controls.Add(Me.lastname1)
+        Me.TabPage6.Controls.Add(Me.Label5)
+        Me.TabPage6.Controls.Add(Me.Label6)
+        Me.TabPage6.Controls.Add(Me.firstname1)
+        Me.TabPage6.Controls.Add(Me.Button3)
+        Me.TabPage6.Controls.Add(Me.ListView2)
+        Me.TabPage6.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage6.Name = "TabPage6"
+        Me.TabPage6.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage6.Size = New System.Drawing.Size(775, 361)
+        Me.TabPage6.TabIndex = 0
+        Me.TabPage6.Text = "DELETE USER"
+        Me.TabPage6.UseVisualStyleBackColor = True
+        '
+        'id1
+        '
+        Me.id1.AutoSize = True
+        Me.id1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.id1.Location = New System.Drawing.Point(570, 26)
+        Me.id1.Name = "id1"
+        Me.id1.Size = New System.Drawing.Size(26, 20)
+        Me.id1.TabIndex = 17
+        Me.id1.Text = "ID"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(546, 26)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(26, 20)
+        Me.Label3.TabIndex = 16
+        Me.Label3.Text = "ID"
+        '
+        'middlename1
+        '
+        Me.middlename1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.middlename1.Location = New System.Drawing.Point(574, 222)
+        Me.middlename1.Name = "middlename1"
+        Me.middlename1.Size = New System.Drawing.Size(117, 26)
+        Me.middlename1.TabIndex = 14
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(550, 199)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(121, 20)
+        Me.Label4.TabIndex = 20
+        Me.Label4.Text = "MIDDLE NAME"
+        '
+        'lastname1
+        '
+        Me.lastname1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lastname1.Location = New System.Drawing.Point(574, 158)
+        Me.lastname1.Name = "lastname1"
+        Me.lastname1.Size = New System.Drawing.Size(117, 26)
+        Me.lastname1.TabIndex = 13
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(543, 62)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(106, 20)
+        Me.Label5.TabIndex = 18
+        Me.Label5.Text = "FIRST NAME"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(546, 126)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(99, 20)
+        Me.Label6.TabIndex = 19
+        Me.Label6.Text = "LAST NAME"
+        '
+        'firstname1
+        '
+        Me.firstname1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.firstname1.Location = New System.Drawing.Point(571, 85)
+        Me.firstname1.Name = "firstname1"
+        Me.firstname1.Size = New System.Drawing.Size(120, 26)
+        Me.firstname1.TabIndex = 12
+        '
+        'Button3
+        '
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(554, 268)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(137, 37)
+        Me.Button3.TabIndex = 15
+        Me.Button3.Text = "DELETE"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'ListView2
+        '
+        Me.ListView2.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8})
+        Me.ListView2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ListView2.FullRowSelect = True
+        Me.ListView2.HideSelection = False
+        Me.ListView2.Location = New System.Drawing.Point(19, 6)
+        Me.ListView2.MultiSelect = False
+        Me.ListView2.Name = "ListView2"
+        Me.ListView2.Size = New System.Drawing.Size(467, 349)
+        Me.ListView2.TabIndex = 11
+        Me.ListView2.UseCompatibleStateImageBehavior = False
+        Me.ListView2.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader5
+        '
+        Me.ColumnHeader5.Text = "ID"
+        '
+        'ColumnHeader6
+        '
+        Me.ColumnHeader6.Text = "LAST NAME"
+        Me.ColumnHeader6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.ColumnHeader6.Width = 115
+        '
+        'ColumnHeader7
+        '
+        Me.ColumnHeader7.Text = "FIRST NAME"
+        Me.ColumnHeader7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.ColumnHeader7.Width = 118
+        '
+        'ColumnHeader8
+        '
+        Me.ColumnHeader8.Text = "MIDDLE NAME"
+        Me.ColumnHeader8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.ColumnHeader8.Width = 127
+        '
+        'TabPage7
+        '
+        Me.TabPage7.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage7.Name = "TabPage7"
+        Me.TabPage7.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage7.Size = New System.Drawing.Size(775, 361)
+        Me.TabPage7.TabIndex = 1
+        Me.TabPage7.Text = "TabPage7"
+        Me.TabPage7.UseVisualStyleBackColor = True
         '
         'TabPage5
         '
@@ -266,72 +435,6 @@ Partial Class adminpannel
         Me.Button1.Text = "UPDATE"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'TabControl2
-        '
-        Me.TabControl2.Controls.Add(Me.TabPage6)
-        Me.TabControl2.Controls.Add(Me.TabPage7)
-        Me.TabControl2.Location = New System.Drawing.Point(6, 29)
-        Me.TabControl2.Name = "TabControl2"
-        Me.TabControl2.SelectedIndex = 0
-        Me.TabControl2.Size = New System.Drawing.Size(783, 387)
-        Me.TabControl2.TabIndex = 0
-        '
-        'TabPage6
-        '
-        Me.TabPage6.Controls.Add(Me.ListView2)
-        Me.TabPage6.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage6.Name = "TabPage6"
-        Me.TabPage6.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage6.Size = New System.Drawing.Size(775, 361)
-        Me.TabPage6.TabIndex = 0
-        Me.TabPage6.Text = "DELETE USER"
-        Me.TabPage6.UseVisualStyleBackColor = True
-        '
-        'TabPage7
-        '
-        Me.TabPage7.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage7.Name = "TabPage7"
-        Me.TabPage7.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage7.Size = New System.Drawing.Size(775, 361)
-        Me.TabPage7.TabIndex = 1
-        Me.TabPage7.Text = "TabPage7"
-        Me.TabPage7.UseVisualStyleBackColor = True
-        '
-        'ListView2
-        '
-        Me.ListView2.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8})
-        Me.ListView2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ListView2.FullRowSelect = True
-        Me.ListView2.HideSelection = False
-        Me.ListView2.Location = New System.Drawing.Point(19, 6)
-        Me.ListView2.Name = "ListView2"
-        Me.ListView2.Size = New System.Drawing.Size(467, 349)
-        Me.ListView2.TabIndex = 11
-        Me.ListView2.UseCompatibleStateImageBehavior = False
-        Me.ListView2.View = System.Windows.Forms.View.Details
-        '
-        'ColumnHeader5
-        '
-        Me.ColumnHeader5.Text = "ID"
-        '
-        'ColumnHeader6
-        '
-        Me.ColumnHeader6.Text = "LAST NAME"
-        Me.ColumnHeader6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ColumnHeader6.Width = 115
-        '
-        'ColumnHeader7
-        '
-        Me.ColumnHeader7.Text = "FIRST NAME"
-        Me.ColumnHeader7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ColumnHeader7.Width = 118
-        '
-        'ColumnHeader8
-        '
-        Me.ColumnHeader8.Text = "MIDDLE NAME"
-        Me.ColumnHeader8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ColumnHeader8.Width = 127
-        '
         'adminpannel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -343,10 +446,11 @@ Partial Class adminpannel
         Me.Text = "Capstone Project E-Library"
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage4.ResumeLayout(False)
-        Me.TabPage5.ResumeLayout(False)
-        Me.TabPage5.PerformLayout()
         Me.TabControl2.ResumeLayout(False)
         Me.TabPage6.ResumeLayout(False)
+        Me.TabPage6.PerformLayout()
+        Me.TabPage5.ResumeLayout(False)
+        Me.TabPage5.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -380,4 +484,13 @@ Partial Class adminpannel
     Friend WithEvents ColumnHeader7 As ColumnHeader
     Friend WithEvents ColumnHeader8 As ColumnHeader
     Friend WithEvents TabPage7 As TabPage
+    Friend WithEvents id1 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents middlename1 As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents lastname1 As TextBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents firstname1 As TextBox
+    Friend WithEvents Button3 As Button
 End Class

@@ -107,19 +107,28 @@ Public Class adminpannel
         Me.Close()
         Form1.Show()
     End Sub
-    Dim idtemp As String
+
+    Dim names As String
     Private Sub ListView2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListView2.SelectedIndexChanged
         If ListView2.SelectedItems.Count > 0 Then
-            idtemp = ListView2.Items(ListView2.SelectedIndices(0)).Text
+            id1.Text = ListView2.Items(ListView2.SelectedIndices(0)).Text
+            lastname1.Text = ListView2.Items(ListView2.SelectedIndices(0)).SubItems(1).Text
+            firstname1.Text = ListView2.Items(ListView2.SelectedIndices(0)).SubItems(2).Text
+            middlename1.Text = ListView2.Items(ListView2.SelectedIndices(0)).SubItems(3).Text
         End If
+
+
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
 
         conn = New MySqlConnection(cnstr)
         conn.Open()
-        Dim sql As String = "SELECT * from users WHERE id = '" & idtemp & "' "
+        Dim sql As String = "SELECT * from users WHERE id = '" & id1.Text & "' "
         cmd = New MySqlCommand(sql, conn)
         reader = cmd.ExecuteReader
         Dim count As Integer = 0
-        Dim names As String
+
         While reader.Read
             names = reader.GetString("lastname") + ", " + reader.GetString("firstname") + " " + reader.GetString("middlename")
         End While
@@ -130,17 +139,23 @@ Public Class adminpannel
         If result = DialogResult.Yes Then
             Dim sql1 As String = "DELETE FROM users WHERE id=@id"
             Dim command As New MySqlCommand(sql1, conn)
-            command.Parameters.AddWithValue("@id", idtemp) ' Set the value of the parameter
+            command.Parameters.AddWithValue("@id", id1.Text) ' Set the value of the parameter
 
             Dim rowsAffected As Integer = command.ExecuteNonQuery()
-            conn.Close()
+
             If rowsAffected > 0 Then
                 MessageBox.Show("User deleted successfully.")
+                lastname1.Clear()
+                firstname1.Clear()
+                middlename1.Clear()
+                id1.Text = "ID"
                 quee1()
             Else
                 MessageBox.Show("User not found.")
             End If
         Else
+
         End If
+        conn.Close()
     End Sub
 End Class
