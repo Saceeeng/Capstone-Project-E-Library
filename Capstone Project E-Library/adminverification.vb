@@ -7,16 +7,19 @@ Public Class adminverification
             retries = retries - 1
             If retries = 0 Then
                 MsgBox("ACCESS DENIED!!! CHANCES LEFT: " + retries.ToString)
+                password.Clear()
                 register.Show()
                 register.selectabas1()
                 Me.Close()
             Else
                 MsgBox("WRONG PASSWORD!!! CHANCES LEFT: " + retries.ToString)
+                password.Clear()
             End If
         ElseIf password.Text = "ADMINISTRATOR12345" Then
+            password.Clear()
             MsgBox("ACCESS GRANTED")
             register.Show()
-            Me.Close()
+            Me.Hide()
         End If
     End Sub
     Private Sub Button1_MouseHover(sender As Object, e As EventArgs) Handles Button1.MouseHover
@@ -35,7 +38,5 @@ Public Class adminverification
     Private Sub adminverification_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
         register.selectabas1()
         register.Show()
-
-        Me.Close()
     End Sub
 End Class
