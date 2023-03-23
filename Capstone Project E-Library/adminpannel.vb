@@ -1,6 +1,7 @@
 ﻿Imports System.Diagnostics.Eventing
 Imports System.Security.Cryptography
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar
 Imports MySql.Data.MySqlClient
 Imports Mysqlx
 
@@ -157,5 +158,33 @@ Public Class adminpannel
 
         End If
         conn.Close()
+    End Sub
+
+    Private Sub Button2_MouseHover(sender As Object, e As EventArgs) Handles Button2.MouseHover
+        Button2.BackColor = Color.DarkGreen
+        Button2.ForeColor = Color.White
+    End Sub
+
+    Private Sub Button2_MouseLeave(sender As Object, e As EventArgs) Handles Button2.MouseLeave
+        Button2.BackColor = Button1.BackColor
+        Button2.ForeColor = Color.Black
+    End Sub
+    Private Sub Button1_MouseHover(sender As Object, e As EventArgs) Handles Button1.MouseHover
+        Button1.BackColor = Color.DarkGreen
+        Button1.ForeColor = Color.White
+    End Sub
+
+    Private Sub Button1_MouseLeave(sender As Object, e As EventArgs) Handles Button1.MouseLeave
+        Button1.BackColor = Button2.BackColor
+        Button1.ForeColor = Color.Black
+    End Sub
+    Private Sub Button3_MouseHover(sender As Object, e As EventArgs) Handles Button3.MouseHover
+        Button3.BackColor = Color.DarkGreen
+        Button1.ForeColor = Color.White
+    End Sub
+
+    Private Sub Button3_MouseLeave(sender As Object, e As EventArgs) Handles Button3.MouseLeave
+        Button3.BackColor = Button2.BackColor
+        Button3.ForeColor = Color.Black
     End Sub
 End Class

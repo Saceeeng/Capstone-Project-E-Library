@@ -12,7 +12,7 @@ Public Class Form1
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         Me.Hide()
         register.Show()
     End Sub
@@ -83,5 +83,40 @@ Public Class Form1
             password.UseSystemPasswordChar = True
             retype = 0
         End If
+    End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        Me.Hide()
+        register.Show()
+    End Sub
+
+    Private Sub Button2_MouseHover(sender As Object, e As EventArgs) Handles Button2.MouseHover
+        Button2.BackColor = Color.DarkGreen
+        Button2.ForeColor = Color.White
+
+    End Sub
+    Private Sub Button2_MouseLeave(sender As Object, e As EventArgs) Handles Button2.MouseLeave
+        Button2.BackColor = Button3.BackColor
+        Button2.ForeColor = Color.Black
+    End Sub
+
+    Private Sub Button3_MouseHover(sender As Object, e As EventArgs) Handles Button3.MouseHover
+        Button3.BackColor = Color.DarkGreen
+        Button3.ForeColor = Color.White
+    End Sub
+
+    Private Sub Button3_MouseLeave(sender As Object, e As EventArgs) Handles Button3.MouseLeave
+        Button3.BackColor = Button2.BackColor
+        Button3.ForeColor = Color.Black
+    End Sub
+
+    Private Sub Button4_MouseHover(sender As Object, e As EventArgs) Handles Button4.MouseHover
+        Button4.BackColor = Color.DarkGreen
+        Button4.ForeColor = Color.White
+    End Sub
+
+    Private Sub Button4_MouseLeave(sender As Object, e As EventArgs) Handles Button4.MouseLeave
+        Button4.BackColor = Button2.BackColor
+        Button4.ForeColor = Color.Black
     End Sub
 End Class

@@ -29,30 +29,31 @@ Partial Class adminverification
         '
         'Button1
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(104, 187)
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold)
+        Me.Button1.Location = New System.Drawing.Point(83, 183)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(103, 49)
+        Me.Button1.Size = New System.Drawing.Size(160, 39)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "VERIFY"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(37, 121)
+        Me.Label1.Font = New System.Drawing.Font("MV Boli", 15.0!)
+        Me.Label1.Location = New System.Drawing.Point(13, 84)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(240, 20)
+        Me.Label1.Size = New System.Drawing.Size(303, 26)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "ADMINISTRATOR PASSWORD"
         '
         'password
         '
         Me.password.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.password.Location = New System.Drawing.Point(79, 144)
+        Me.password.Location = New System.Drawing.Point(62, 126)
         Me.password.Name = "password"
-        Me.password.Size = New System.Drawing.Size(160, 26)
+        Me.password.Size = New System.Drawing.Size(193, 26)
         Me.password.TabIndex = 0
         Me.password.UseSystemPasswordChar = True
         '
@@ -60,7 +61,8 @@ Partial Class adminverification
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(319, 450)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(92, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(110, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(328, 309)
         Me.Controls.Add(Me.password)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
